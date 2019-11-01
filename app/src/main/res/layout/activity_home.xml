@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.HomeActivity"
+    android:background="@drawable/homes"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="250px"
+            android:background="@drawable/text"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="200px"
+            android:background="@drawable/ENSIKLOPEDIA"
+            android:layout_gravity="center"
+            android:layout_marginTop="800px"
+            >
+        </ImageView>
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="200px"
+            android:background="@drawable/QUIS"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
