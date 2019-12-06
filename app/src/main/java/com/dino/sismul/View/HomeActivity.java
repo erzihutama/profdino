@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.dino.sismul.R;
 
@@ -19,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        imageEnsiklopedi  = (ImageView)findViewById(R.id.ensiklopedi);
+        imageEnsiklopedi  = findViewById(R.id.ensiklopedi);
         imageEnsiklopedi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,11 +27,13 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-        imageQuiz = (ImageView)findViewById(R.id.quiz);
+        imageQuiz = findViewById(R.id.quiz);
         imageQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomeActivity.this, "Hallo Ini Quiz", Toast.LENGTH_LONG).show();
+                Intent quiz = new Intent(HomeActivity.this,QuisActivity.class);
+                startActivity(quiz);
+//                Toast.makeText(HomeActivity.this, "Hallo Ini Quiz", Toast.LENGTH_LONG).show();
             }
         });
 

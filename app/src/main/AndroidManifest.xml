@@ -10,10 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.QuisActivity"></activity>
+        <activity android:name=".View.HasilQuiz"></activity>
+        <activity android:name=".View.QuisActivity" />
         <activity
             android:name=".View.EnsiklopediActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity android:name=".MainActivity" />
         <activity android:name=".View.HomeActivity" />
         <activity android:name=".View.SplashScreen">
