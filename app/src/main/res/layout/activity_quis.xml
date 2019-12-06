@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_below="@id/lineSoal"
-        android:layout_margin="10dp">
+        android:layout_margin="20dp">
 
         <RadioGroup
             android:id="@+id/rgPilihanJawaban"
@@ -65,21 +65,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textSize="18sp"/>
+                android:textColor="#41B815"
+                android:textSize="28sp"/>
 
             <RadioButton
                 android:id="@+id/rbPilihanJawaban2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textSize="18sp"/>
+                android:textColor="#41B815"
+                android:textSize="28sp"/>
 
             <RadioButton
                 android:id="@+id/rbPilihanJawaban3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textSize="18sp"/>
+                android:textColor="#41B815"
+                android:textSize="28sp"/>
         </RadioGroup>
     </LinearLayout>
 
@@ -90,7 +93,8 @@
         android:layout_below="@id/linePilihanJawaban"
         android:layout_alignParentRight="true"
         android:layout_gravity="right"
-        android:layout_margin="10dp"
-        android:background="#5ed76c"
-        android:text="SUBMIT"/>
+        android:layout_margin="20dp"
+        android:textColor="#FFF"
+        android:background="@drawable/bg_button"
+        android:text="@string/submit"/>
 </RelativeLayout>
