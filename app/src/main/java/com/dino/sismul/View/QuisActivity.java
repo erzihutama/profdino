@@ -6,17 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.dino.sismul.Model.Soalquiz;
 import com.dino.sismul.R;
 
 public class QuisActivity extends AppCompatActivity {
 
-    TextView mtvSkor, mtvSoal;
+    TextView mtvSkor;
+    ImageView mtvSoal;
     RadioGroup mrgPilihanJawaban;
     RadioButton mrbPilihanJawaban1, mrbPilihanJawaban2, mrbPilihanJawaban3;
     Button mbtnSubmit;
@@ -33,13 +36,13 @@ public class QuisActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quis);
         mtvSkor = (TextView) findViewById(R.id.tvSkor);
-        mtvSoal = (TextView) findViewById(R.id.tvSoal);
+        mtvSoal = (ImageView) findViewById(R.id.tvSoal);
         mrgPilihanJawaban = (RadioGroup) findViewById(R.id.rgPilihanJawaban);
         mrbPilihanJawaban1 = (RadioButton) findViewById(R.id.rbPilihanJawaban1);
         mrbPilihanJawaban2 = (RadioButton) findViewById(R.id.rbPilihanJawaban2);
         mrbPilihanJawaban3 = (RadioButton) findViewById(R.id.rbPilihanJawaban3);
         mbtnSubmit = (Button) findViewById(R.id.btnSubmit);
-
+        setKonten();
 
         mbtnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,9 +65,11 @@ public class QuisActivity extends AppCompatActivity {
             i.putExtra("skorAkhir",jumlahSkor);
             i.putExtra("activity","PilihanGanda");
             startActivity(i);
+            finish();
         }else{
             //setting text dengan mengambil text dari method getter di kelas SoalPilihanGanda
-            mtvSoal.setText(soalPG.getPertanyaan(x));
+//            mtvSoal.setText(soalPG.getPertanyaan(x));
+            Glide.with(this).load(soalPG.getPertanyaan(x)).override(250,350).into(mtvSoal);
             mrbPilihanJawaban1.setText(soalPG.getPilihanJawaban1(x));
             mrbPilihanJawaban2.setText(soalPG.getPilihanJawaban2(x));
             mrbPilihanJawaban3.setText(soalPG.getPilihanJawaban3(x));

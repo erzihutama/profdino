@@ -31,6 +31,7 @@ public class HasilQuiz extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(HasilQuiz.this, HomeActivity.class);
                 startActivity(i);
+                finish();
             }
         });
 

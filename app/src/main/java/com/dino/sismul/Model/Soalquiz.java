@@ -3,9 +3,9 @@ package com.dino.sismul.Model;
 public class Soalquiz {
     //membuat array untuk pertanyaan berupa audio
     public String pertanyaan[] = {
-        "Dinosaurus apa yang karnivora ?",
-        "Dinosaurus apa yang herbivora ?",
-        "Dinosaurus apa yang lehernya panjang ?"
+        "https://awsimages.detik.net.id/community/media/visual/2018/11/30/f0bdeefc-1646-4ed1-89f9-96da8c512381.jpeg?w=700&q=99",
+        "https://cdn.idntimes.com/content-images/community/2019/07/jw2-adv1sheet-trex-2-preview-rgb-220508902f652ee1486a1bc2200e7b07_600x400.jpg",
+        "https://cdn2.tstatic.net/travel/foto/bank/images/ankylosaurus_20180402_130710.jpg"
     };
 
     //membuat array untuk pilihan jawaban
