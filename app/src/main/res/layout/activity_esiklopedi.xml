@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bges"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
@@ -39,17 +39,19 @@
                         <ImageView
                             android:id="@+id/Rhamphorhynchus"
                             android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="32dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginTop="48dp"
                             android:contentDescription="Rhamphorhynchus"
                             android:src="@drawable/rhamphorhynchus"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.16"
                             tools:ignore="MissingConstraints">
 
                         </ImageView>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -58,10 +60,9 @@
 
                         <ImageView
                             android:id="@+id/parasaurolopos"
-                            android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="100dp"
-                            android:layout_marginTop="300dp"
+                            android:layout_width="200dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="250dp"
                             android:contentDescription="Parasaurolopus"
                             android:src="@drawable/parasaurolopus"
                             app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +70,20 @@
                             tools:ignore="InvalidId,MissingConstraints">
 
                         </ImageView>
+                        <ImageView
+                            android:id="@+id/Deinonychus"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="450dp"
+                            android:contentDescription="Deinonychus"
+                            android:src="@drawable/deinonychus"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                        </ImageView>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -76,18 +91,64 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:id="@+id/Deinonychus"
-                            android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="32dp"
-                            android:contentDescription="Deinonychus"
-                            android:src="@drawable/Deinonychus"
+                            android:id="@+id/Hypsilophodon"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="380dp"
+                            android:layout_marginStart="50dp"
+                            android:contentDescription="Hypsilophodon"
+                            android:src="@drawable/hypsilophodon"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="MissingConstraints">
 
                         </ImageView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/Plesiosaurus"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="120dp"
+                            android:layout_marginStart="0dp"
+                            android:contentDescription="Plesiosaurus"
+                            android:src="@drawable/plesiosaurus"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/Stegosaurus"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="250dp"
+                            android:layout_marginStart="50dp"
+                            android:contentDescription="Stegosaurus"
+                            android:src="@drawable/stegosaurus"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/ankylosaurus"
+                            android:layout_width="250dp"
+                            android:layout_height="450dp"
+                            android:layout_marginTop="450dp"
+                            android:layout_marginStart="30dp"
+                            android:contentDescription="ankylosaurus"
+                            android:src="@drawable/ankylosaurus"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+
+                        </ImageView>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
@@ -97,15 +158,107 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bs2"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
+                        <ImageView
+                            android:id="@+id/Pteranodon"
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="Pteranodon"
+                            android:src="@drawable/pteranodon"
+                            android:layout_marginTop="50dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/Triceraptors"
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="Triceraptors"
+                            android:src="@drawable/triceraptors"
+                            android:layout_marginTop="400dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/Brachiosaurus"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="Brachiosaurus"
+                            android:src="@drawable/brachiosaurus"
+                            android:layout_marginTop="50dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/Allosaurus"
+                            android:layout_width="350dp"
+                            android:layout_height="350dp"
+                            android:contentDescription="Allosaurus"
+                            android:src="@drawable/allosaurus"
+                            android:layout_marginTop="200dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/Iguanadon"
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:contentDescription="Iguanadon"
+                            android:src="@drawable/iguanadon"
+                            android:layout_marginTop="400dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/Velociraptor"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="Velociraptor"
+                            android:src="@drawable/velociraptor"
+                            android:layout_marginTop="350dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/spinosaurus"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="500dp"
+                            android:contentDescription="spinosaurus"
+                            android:src="@drawable/spinosaurus"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints"></ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

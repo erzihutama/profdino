@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dino.sismul">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,11 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".VelociraptorActivity"></activity>
+        <activity android:name=".TriceraptorsActivity" />
+        <activity android:name=".StegosaurusActivity" />
+        <activity android:name=".SpinosaurusActivity" />
+        <activity android:name=".PteranodonActivity" />
+        <activity android:name=".PlesiosaurusActivity" />
+        <activity android:name=".ParasaurolopusActivity" />
+        <activity android:name=".IguanadonActivity" />
+        <activity android:name=".HypsilophodonActivity" />
+        <activity android:name=".DeinonychusActivity" />
+        <activity android:name=".BrachiosaurusActivity" />
+        <activity android:name=".AnkylosaurusActivity" />
+        <activity android:name=".AllosaurusActivity" />
+        <activity android:name=".RhamphorhynchusActivity" />
         <activity android:name=".View.HasilQuiz" />
         <activity android:name=".View.QuisActivity" />
         <activity
             android:name=".View.EnsiklopediActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity" />
         <activity android:name=".View.HomeActivity" />
         <activity android:name=".View.SplashScreen">

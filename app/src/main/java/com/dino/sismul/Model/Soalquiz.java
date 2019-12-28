@@ -10,16 +10,16 @@ public class Soalquiz {
 
     //membuat array untuk pilihan jawaban
     private String pilihanJawaban[][] = {
-            {"Iguanadon","Allosaurus","Hypsilophodon"},
-            {"Allosaurus","Spinosaurus","Iguanadon"},
-            {"Ankylosaurus","Brachiosaurus","Triceraptors"}
+            {"iguanadon","allosaurus","hypsilophodon"},
+            {"allosaurus","Spinosaurus","iguanadon"},
+            {"Ankylosaurus","brachiosaurus","triceraptors"}
     };
 
     //membuat array untuk jawaban yang benar
     private String jawabanBenar[] = {
-            "Hypsilophodon",
-            "Allosaurus",
-            "Brachiosaurus"
+            "hypsilophodon",
+            "allosaurus",
+            "brachiosaurus"
     };
 
     //membuat getter untuk mengambil pertanyaan
