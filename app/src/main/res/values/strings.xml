@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="submit">SUBMIT</string>
+    <string name="kembali_ke_home">Home</string>
 </resources>

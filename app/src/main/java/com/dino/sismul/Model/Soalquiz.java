@@ -46,8 +46,8 @@ public class Soalquiz {
     }
 
     public String getPertanyaan1(int x){
-        String soall = pertanyaan1[x];
-        return soall;
+        String pert = pertanyaan1[x];
+        return pert;
     }
 
     //membuat getter untuk mengambil pilihan yang ke 1 atau a

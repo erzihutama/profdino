@@ -25,7 +25,7 @@
         android:background="#b5fffe"
         android:gravity="center"
         android:padding="10dp"
-        android:text="SKOR : 100"
+        android:text="SKOR KAMU: 100"
         android:textColor="#000"
         android:textSize="36sp"/>
 
@@ -36,8 +36,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="HOME"
-        android:background="#f58686"
+        android:text="@string/kembali_ke_home"
+        android:textColor="#fff"
+        android:background="@drawable/bg_button"
         android:textSize="20sp"/>
 
 </RelativeLayout>

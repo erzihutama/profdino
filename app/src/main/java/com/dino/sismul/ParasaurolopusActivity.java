@@ -30,7 +30,7 @@ private WebView webView ;
         // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://profdino.herokuapp.com/Parasaurolopus.php");
+        webView.loadUrl("https://profdino.herokuapp.com/parasaurolopus.php");
     }
 
     @Override
