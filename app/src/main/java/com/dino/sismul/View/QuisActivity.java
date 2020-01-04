@@ -18,7 +18,7 @@ import com.dino.sismul.R;
 
 public class QuisActivity extends AppCompatActivity {
 
-    TextView mtvSkor;
+    TextView mtvSkor,soalText;
     ImageView mtvSoal;
     RadioGroup mrgPilihanJawaban;
     RadioButton mrbPilihanJawaban1, mrbPilihanJawaban2, mrbPilihanJawaban3;
@@ -37,6 +37,7 @@ public class QuisActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quis);
         mtvSkor = (TextView) findViewById(R.id.tvSkor);
         mtvSoal = (ImageView) findViewById(R.id.tvSoal);
+        soalText = (TextView) findViewById(R.id.soal_text);
         mrgPilihanJawaban = (RadioGroup) findViewById(R.id.rgPilihanJawaban);
         mrbPilihanJawaban1 = (RadioButton) findViewById(R.id.rbPilihanJawaban1);
         mrbPilihanJawaban2 = (RadioButton) findViewById(R.id.rbPilihanJawaban2);
@@ -70,6 +71,7 @@ public class QuisActivity extends AppCompatActivity {
             //setting text dengan mengambil text dari method getter di kelas SoalPilihanGanda
 //            mtvSoal.setText(soalPG.getPertanyaan(x));
             Glide.with(this).load(soalPG.getPertanyaan(x)).override(250,350).into(mtvSoal);
+            soalText.setText(soalPG.getPertanyaan1(x));
             mrbPilihanJawaban1.setText(soalPG.getPilihanJawaban1(x));
             mrbPilihanJawaban2.setText(soalPG.getPilihanJawaban2(x));
             mrbPilihanJawaban3.setText(soalPG.getPilihanJawaban3(x));

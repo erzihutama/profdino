@@ -33,21 +33,31 @@
     <LinearLayout
         android:id="@+id/lineSoal"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_below="@id/lineSkor"
         android:layout_margin="10dp"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/tvSoal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="15dp"
             android:textSize="20sp"/>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/soal_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/ijo_muda"
+            android:textSize="20sp"/>
 
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/linePilihanJawaban"
         android:layout_width="match_parent"

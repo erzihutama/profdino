@@ -1,31 +1,53 @@
 package com.dino.sismul.Model;
 
+import android.media.MediaPlayer;
+
+import com.dino.sismul.R;
+
 public class Soalquiz {
-    //membuat array untuk pertanyaan berupa audio
     public String pertanyaan[] = {
-        "https://files.fm/thumb_show.php?i=ssujb99y",
-        "https://files.fm/thumb_show.php?i=538rx3av",
-        "https://files.fm/thumb_show.php?i=8ytvf6kr"
+        "https://files.fm/thumb_show.php?i=947gd3r6",
+        "https://files.fm/thumb_show.php?i=4mne6nxc",
+        "https://files.fm/thumb_show.php?i=a6akvhjv",
+        "https://files.fm/thumb_show.php?i=2gr7hjk4",
+        "https://files.fm/thumb_show.php?i=zh6zrvaj"
+    };
+
+    public String pertanyaan1[] = {
+            "Jenis Dinosaurus apa ini?",
+            "Jenis Dinosaurus apa ini?",
+            "Apakah dinosaurus bertelur ?",
+            "Aku memiliki sirip atau duri yang berjajar rapi di punggungku, sirip ini kuat dan tajam, siapa namaku ?",
+            "Aku dinosaurus yang berjalan lamban, siapakah aku, aku memiliki pemukul yang keras di ujung ekorku"
     };
 
     //membuat array untuk pilihan jawaban
     private String pilihanJawaban[][] = {
-            {"iguanadon","allosaurus","hypsilophodon"},
-            {"allosaurus","Spinosaurus","iguanadon"},
-            {"Ankylosaurus","brachiosaurus","triceraptors"}
+            {"Ankilosaurus","Hypsilophodon","iguanadon"},
+            {"Triseratops","Allosaurus","brachiosaurus"},
+            {"Iya Bertelur","Tidak Bertelur","Semuanya Salah"},
+            {"Plesiosaurus","Stegosaurus","Allosaurus"},
+            {"Chungkingosaurus","Plesiosaurus","Ankilosaurus"}
     };
 
     //membuat array untuk jawaban yang benar
     private String jawabanBenar[] = {
-            "hypsilophodon",
-            "allosaurus",
-            "brachiosaurus"
+            "Hypsilophodon",
+            "Triseratops",
+            "Iya Bertelur",
+            "Stegosaurus",
+            "Ankilosaurus"
     };
 
     //membuat getter untuk mengambil pertanyaan
     public String getPertanyaan(int x){
         String soal = pertanyaan[x];
         return soal;
+    }
+
+    public String getPertanyaan1(int x){
+        String soall = pertanyaan1[x];
+        return soall;
     }
 
     //membuat getter untuk mengambil pilihan yang ke 1 atau a
